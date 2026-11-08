@@ -8,13 +8,7 @@ from pathlib import Path
 from admin_utils.constants import DEVICE, GLOBAL_BATCH_SIZE_TEST, GLOBAL_MAX_LENGTH
 from core_utils.llm.time_decorator import report_time
 from core_utils.project.lab_settings import LabSettings
-
-from lab_7_llm.main import (
-    LLMPipeline,
-    RawDataImporter,
-    RawDataPreprocessor,
-    TaskDataset,
-)
+from lab_7_llm.main import LLMPipeline, RawDataImporter, RawDataPreprocessor, TaskDataset
 
 
 @report_time
