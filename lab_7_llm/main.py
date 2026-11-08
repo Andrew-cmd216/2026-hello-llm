@@ -8,15 +8,13 @@ Working with Large Language Models.
 import pandas as pd
 import torch
 from datasets import load_dataset
+from pandas import DataFrame
 from torch.utils.data import Dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from core_utils.llm.llm_pipeline import AbstractLLMPipeline
 from core_utils.llm.raw_data_importer import AbstractRawDataImporter
-from core_utils.llm.raw_data_preprocessor import (
-    AbstractRawDataPreprocessor,
-    ColumnNames,
-)
+from core_utils.llm.raw_data_preprocessor import AbstractRawDataPreprocessor, ColumnNames
 from core_utils.llm.time_decorator import report_time
 
 
